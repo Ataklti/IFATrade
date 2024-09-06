@@ -1,0 +1,365 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Updated Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #22c1c3; /* Hover effect with theme color */
+}
+
+/* Updated Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34, 193, 195, 0.7), rgba(45, 253, 113, 0.7)), url('coffee-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    background-color: #22c1c3;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #2dfd71;
+}
+
+
+/* Coffee Card Styling 
+.coffee-card {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient background 
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #27ae60, #2ecc71); /* Gradient flip on hover 
+}
+
+.coffee-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.coffee-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #eafaf1; /* Light color for text to contrast the green background 
+}
+
+/* Ensure the text is readable 
+.coffee-card:hover p {
+    color: #e8f6e3;
+}*/
+
+/* Coffee Export Section with Background Image */
+#coffee-export {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./img/Coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 60px 0;
+}
+
+#coffee-export h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.coffee-card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background to make text readable */
+    border-radius: 15px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1); /* Full white background on hover */
+}
+
+.coffee-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.coffee-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555; /* Darker color for readability */
+}
+
+/* Ensure the text is readable */
+.coffee-card:hover p {
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* Technology Card Styling */
+
+/* Technology Import Section with Background Image */
+#technology-import {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/DataCenter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 60px 0;
+}
+
+#technology-import h2 {
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 15px;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1); /* Full white background on hover */
+}
+
+.tech-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tech-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555; /* Darker color for readability */
+}
+
+/* Ensure the text is readable */
+.tech-card:hover p {
+    color: #333;
+}
+
+
+
+.tech-card {
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient background */
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2980b9, #3498db); /* Gradient flip on hover */
+}
+
+.tech-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tech-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #eaf4fb; /* Light color for text to contrast the blue background */
+}
+
+/* Ensure the text is readable */
+.tech-card:hover p {
+    color: #d6ecf7;
+}
+
+
+/* Staff Card Styling */
+.staff-card {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Purple gradient background */
+    border-radius: 15px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.staff-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Gradient flip on hover */
+}
+
+/* Staff Photo */
+.staff-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    transition: border-color 0.3s ease;
+}
+
+.staff-card:hover .staff-photo img {
+    border-color: #f1c40f; /* Border color changes on hover */
+}
+
+/* Staff Name */
+.staff-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #f7f3fc;
+}
+
+/* Staff Position */
+.staff-card .position {
+    font-size: 1.1rem;
+    color: #e1d4f0;
+}
+
+/* Ensure the text is readable */
+.staff-card:hover .position {
+    color: #f7f3fc;
+}
+
+/* Logo Section Styling */
+#logo-section {
+    background-color: #f7f7f7;
+}
+
+.logo-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-card img {
+    width: 100%;
+    max-width: 150px; /* Ensure logos have a max width */
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo-card:hover img {
+    filter: grayscale(0); /* Remove grayscale on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .logo-card {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
